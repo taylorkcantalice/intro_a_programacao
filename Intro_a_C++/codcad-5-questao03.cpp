@@ -1,0 +1,34 @@
+/**
+ ============================================================================
+ Nome      : codcad-5-questao03.cpp
+ Autor     : Taylor Klaus Cantalice Nobrega - 20200004268 (UFPB)
+ Versao    : 1.0
+ Copyright : Your copyright notice
+ Descricao : Soma do Vetor
+ ============================================================================
+**/
+
+#include <iostream>
+
+using namespace std;
+
+int soma_vetor(int n, int v[]){
+	int soma = 0;
+
+	for(int i = 0; i < n; i++){
+        soma += v[i];
+	}
+
+	return soma;
+}
+
+int main(){
+
+	int n, v[100100];
+	cin >> n;
+
+	for(int i=0;i<n;i++)
+		cin >> v[i];
+
+	cout << soma_vetor(n,v) << "\n";
+}
